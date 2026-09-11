@@ -1,0 +1,11 @@
+# Never commit secrets / credentials
+auth.json
+**/auth.json
+*.key
+*.pem
+.env
+
+# Session history and local binaries
+sessions/
+bin/
+pi/TODO.md
