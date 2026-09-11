@@ -15,6 +15,14 @@ Whenever the xml2rfc version is updated in the `author-tools` project
 (`requirements.txt` / `constraints.txt`), remind the user to also update
 https://github.com/rfc-editor-drafts/base-devcontainer
 
+## dotagents sync
+
+The `dotagents` repo (`~/.pi/agent/` config mirrored under `pi/`) tracks
+`AGENTS.md`, `settings.json`, and `models-store.json`. Whenever any of these
+files under `~/.pi/agent/` is updated, copy the change into the dotagents repo
+(`pi/`) and commit it there. Never commit secrets (`auth.json`), session
+history, local binaries, or `TODO.md`.
+
 ## Amending commits
 
 When amending a commit (`git commit --amend`), always show the diff of the
