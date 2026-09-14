@@ -3,8 +3,9 @@
 ## Branching
 
 Before creating a commit, check the current branch. If the project is on the
-`main` branch, always ask whether a new branch should be created first (do not
-commit directly to `main` without confirming).
+`main` branch, create a new branch first (do not commit directly to `main`),
+unless the project explicitly opts into direct-to-main commits (e.g. via its
+own project-level `AGENTS.md`, as the `dotagents` repo does).
 
 Name new branches using conventional-commit-style prefixes, for example:
 `feat/`, `fix/`, `chore/`, `docs/`, `build/`, `refactor/`, `test/`.
