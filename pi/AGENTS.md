@@ -1,5 +1,10 @@
 # Global Instructions
 
+## Pushing
+
+Never run `git push` (or otherwise push to a remote). Leave pushing to the
+user. Committing locally is fine.
+
 ## Branching
 
 Before creating a commit, check the current branch. If the project is on the
