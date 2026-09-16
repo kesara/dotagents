@@ -8,7 +8,8 @@ Agent-related configuration and instructions.
 pi/
 ├── AGENTS.md          # Persistent global agent instructions
 ├── settings.json      # pi UI/app settings (theme, changelog version)
-└── models-store.json  # Model catalog (definitions, pricing, capabilities)
+├── models-store.json  # Model catalog (definitions, pricing, capabilities)
+└── skills/            # Global agent skills (loaded on-demand)
 ```
 
 ## pi
@@ -20,6 +21,7 @@ mkdir -p ~/.pi/agent
 cp pi/AGENTS.md ~/.pi/agent/AGENTS.md
 cp pi/settings.json ~/.pi/agent/settings.json
 cp pi/models-store.json ~/.pi/agent/models-store.json
+cp -r pi/skills ~/.pi/agent/skills
 ```
 
 ## Security
