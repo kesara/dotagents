@@ -56,6 +56,11 @@ Choose the co-author line based on the provider (`PI_PROVIDER`):
   Co-Authored-By: Gemini <gemini@gogle.cc>
   Model: <model> (thinking: <reasoning level>)
   ```
+- Qwen3-Coder:
+  ```
+  Co-Authored-By: Qwen-Coder <qwen-coder@alibabacloud.com>
+  Model: <model> (thinking: <reasoning level>)
+  ```
 
 Substitute the actual running model and reasoning level. Example:
 
