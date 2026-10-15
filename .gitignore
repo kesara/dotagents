@@ -9,3 +9,16 @@ auth.json
 sessions/
 bin/
 pi/TODO.md
+
+# Claude Code: credentials, account state, history, caches
+.credentials.json
+**/.credentials.json
+.claude.json
+**/.claude.json
+history.jsonl
+projects/
+session-env/
+shell-snapshots/
+backups/
+cache/
+plugins/
