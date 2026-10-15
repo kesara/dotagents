@@ -29,6 +29,21 @@ files under `~/.pi/agent/` is updated, copy the change into the dotagents repo
 (`pi/`) and commit it there. Never commit secrets (`auth.json`), session
 history, local binaries, or `TODO.md`.
 
+### Keep pi and Claude Code in step
+
+The dotagents repo also mirrors the Claude Code config under `claude-code/`.
+Any change to persistent instructions/knowledge or skills MUST be applied to
+both:
+
+| Kind         | pi                                 | Claude Code                          |
+|--------------|------------------------------------|--------------------------------------|
+| Instructions | `~/.pi/agent/AGENTS.md` → `pi/AGENTS.md` | `~/.claude/CLAUDE.md` → `claude-code/CLAUDE.md` |
+| Skills       | `~/.pi/agent/skills/` → `pi/skills/`     | `~/.claude/skills/` → `claude-code/skills/`     |
+
+Adapt tool-specific details (e.g. `PI_*` env vars, co-author lines for other
+providers) rather than copying them verbatim. If the live `~/.claude/`
+directory is absent on this machine, update `claude-code/` in the repo only.
+
 ## Amending commits
 
 When amending a commit (`git commit --amend`), always show the diff of the
